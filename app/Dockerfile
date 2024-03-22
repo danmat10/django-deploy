@@ -64,4 +64,5 @@ RUN chown -R app:app $APP_HOME
 USER app
 
 # run entrypoint.prod.sh
-ENTRYPOINT ["/home/app/web/entrypoint.prod.sh"]
+RUN python manage.py flush --no-input
+RUN python manage.py migrate
