@@ -11,6 +11,7 @@ WORKDIR /usr/src/app
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
+ENV DJANGO_ALLOWED_HOSTS "localhost 127.0.0.1"
 
 # install system dependencies
 RUN apt-get update && \
