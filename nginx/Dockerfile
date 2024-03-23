@@ -8,4 +8,4 @@ COPY nginx.conf /etc/nginx/conf.d/
 
 # Copia os arquivos de certificado SSL para o container
 COPY certificate.crt /etc/ssl/certs/
-COPY priavate_key.key /etc/ssl/private/
+COPY private_key.key /etc/ssl/private/
