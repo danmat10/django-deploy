@@ -19,7 +19,7 @@ services:
     depends_on:
       - web
     volumes:
-      - static_volume:/home/app/web/staticfiles
+      - ./volumes/certs:/etc/ssl/certs
 
 volumes:
   static_volume:
